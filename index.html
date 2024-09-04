@@ -174,7 +174,7 @@
       <span class="post-meta-item-text">發表於</span>
       
 
-      <time title="創建時間：2024-09-04 11:29:43 / 修改時間：19:05:00" itemprop="dateCreated datePublished" datetime="2024-09-04T11:29:43+08:00">2024-09-04</time>
+      <time title="創建時間：2024-09-04 11:29:43 / 修改時間：20:07:26" itemprop="dateCreated datePublished" datetime="2024-09-04T11:29:43+08:00">2024-09-04</time>
     </span>
 
   
@@ -187,7 +187,87 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          
+          <h2 id="初始化工作環境"><a href="#初始化工作環境" class="headerlink" title="初始化工作環境"></a>初始化工作環境</h2><p>hexo init <code>資料夾名稱</code></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%20Hexo%20Blog%2F%E5%88%9D%E5%A7%8B%E5%8C%96%E5%B7%A5%E4%BD%9C%E7%92%B0%E5%A2%83.png?alt=media&token=79cb09cd-e1a7-4d8b-a357-9b532edf11d1"></p>
+<p>用 VSCode 開啟 hanBlog 資料夾</p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%20Hexo%20Blog%2FCleanShot%202024-09-04%20at%2010.35.01.png?alt=media&token=cfc22369-a16b-414e-ae60-44e1142d1450"></p>
+<p>目前 themes 裡還未安裝主題</p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%20Hexo%20Blog%2FCleanShot%202024-09-04%20at%2010.37.40.png?alt=media&token=142eb4fe-364c-4e24-bfb6-ab7c5a330863"></p>
+<p>clone 樣版主題 NexT 到 themes&#x2F;next 資料夾</p>
+<p><code>git clone https://github.com/next-theme/hexo-theme-next themes/next</code></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%20Hexo%20Blog%2FCleanShot%202024-09-04%20at%2010.39.47.png?alt=media&token=21a8ec86-bb15-47c7-832d-f875d3a5ee29"></p>
+<p>themes 下多了 next 主題</p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%20Hexo%20Blog%2FCleanShot%202024-09-04%20at%2010.41.22.png?alt=media&token=229e0fef-d204-45e8-b980-a00afed30ef7"></p>
+<h2 id="修改-config-yml"><a href="#修改-config-yml" class="headerlink" title="修改 config.yml"></a>修改 config.yml</h2><p>把 landscape 改成 next 主題</p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%20Hexo%20Blog%2FCleanShot%202024-09-04%20at%2010.45.45.png?alt=media&token=dba1df37-ccc4-4ac4-a6af-040c91e33ddf"></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%20Hexo%20Blog%2FCleanShot%202024-09-04%20at%2010.46.59.png?alt=media&token=525860f0-c379-4602-a6a0-c67d10102296"></p>
+<p>啟動本地端伺服器  run 一下 server 看看 Blog</p>
+<p>執行 <code>hexo server</code></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%20Hexo%20Blog%2FCleanShot%202024-09-04%20at%2010.50.52.png?alt=media&token=8ba14c27-a1fb-4127-8a84-b95cfb952db3"></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%20Hexo%20Blog%2FCleanShot%202024-09-04%20at%2010.53.11.png?alt=media&token=8b2247c7-694a-422a-8a87-27de2f307363"></p>
+<h2 id="new-新增文章"><a href="#new-新增文章" class="headerlink" title="new 新增文章"></a>new 新增文章</h2><p><code>hexo new &#39;文章名稱&#39;</code></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%20Hexo%20Blog%2FCleanShot%202024-09-04%20at%2011.30.08.png?alt=media&token=9a4c9943-625b-4cd9-8bd6-c9dc1f28f9a1"></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%20Hexo%20Blog%2FCleanShot%202024-09-04%20at%2011.31.33.png?alt=media&token=017f7ade-0dc7-4d4f-8258-7efe99b2b844"></p>
+<h2 id="多-tag-寫法"><a href="#多-tag-寫法" class="headerlink" title="多 tag 寫法"></a>多 tag 寫法</h2><p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%20Hexo%20Blog%2FCleanShot%202024-09-04%20at%2012.49.26.png?alt=media&token=40ce3269-d327-41e8-9e9e-511c26a65472"></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%20Hexo%20Blog%2FCleanShot%202024-09-04%20at%2015.07.40.png?alt=media&token=88663bf6-68b5-4e61-bf7d-a4245eabe092"></p>
+<h2 id="目錄結構-設定檔-config"><a href="#目錄結構-設定檔-config" class="headerlink" title="目錄結構 設定檔 config"></a>目錄結構 設定檔 config</h2><p><a target="_blank" rel="noopener" href="https://hexo.io/zh-tw/docs/">文件 | Hexo</a></p>
+<p><a target="_blank" rel="noopener" href="https://hexo.io/zh-tw/docs/configuration">配置 | Hexo</a></p>
+<p>客製化 Blog 資訊，可以在 <code>_config.yml</code> 或 <a target="_blank" rel="noopener" href="https://hexo.io/zh-tw/docs/configuration#%E4%BD%BF%E7%94%A8%E6%9B%BF%E4%BB%A3%E9%85%8D%E7%BD%AE%E6%AA%94">替代配置檔</a> 中修改網站配置。</p>
+<p>title 必改，這樣 google 才收尋的到，facebook 分享時也能顯示。</p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%20Hexo%20Blog%2FCleanShot%202024-09-04%20at%2015.01.39.png?alt=media&token=c6dc873d-561c-4912-a0eb-a9971f6d4dc4"></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%20Hexo%20Blog%2FCleanShot%202024-09-04%20at%2015.04.34.png?alt=media&token=0ffaf09c-1eb1-449a-a949-4871e53c745e"></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%20Hexo%20Blog%2FCleanShot%202024-09-04%20at%2015.06.44.png?alt=media&token=84b17d2c-0f8f-4669-ae11-33aa98cad6a4"></p>
+<p>額外修改的地方</p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%20Hexo%20Blog%2FCleanShot%202024-09-04%20at%2015.14.47.png?alt=media&token=ba2fd98b-d612-49a4-bd43-51b99661f44a"></p>
+<p>language 改成 zh-TW 後，網站也變成繁體中文了。</p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%20Hexo%20Blog%2FCleanShot%202024-09-04%20at%2015.23.00.png?alt=media&token=6cd9db7c-4a13-4952-9f4b-f71a5fc84b27"></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%20Hexo%20Blog%2FCleanShot%202024-09-04%20at%2015.20.49.png?alt=media&token=d8041908-e57e-492d-ad3e-24763cccdbf6"></p>
+<h2 id="Hexo-Blog-部署到-GitHub"><a href="#Hexo-Blog-部署到-GitHub" class="headerlink" title="Hexo Blog 部署到 GitHub"></a>Hexo Blog 部署到 GitHub</h2><h3 id="建立-GitHub-專案"><a href="#建立-GitHub-專案" class="headerlink" title="建立 GitHub 專案"></a>建立 GitHub 專案</h3><h4 id="Step1-點選-New-新增一個-Repository（專案）"><a href="#Step1-點選-New-新增一個-Repository（專案）" class="headerlink" title="Step1. 點選 New 新增一個 Repository（專案）"></a>Step1. 點選 New 新增一個 Repository（專案）</h4><p> <img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%20Hexo%20Blog%2FCleanShot%202024-09-04%20at%2016.10.30.png?alt=media&token=d08e0e6a-9396-48bd-8a00-9163ac714c4d"></p>
+<h4 id="Step2-將專案名稱命名為-hans-blog"><a href="#Step2-將專案名稱命名為-hans-blog" class="headerlink" title="Step2. 將專案名稱命名為 hans-blog"></a>Step2. 將專案名稱命名為 <code>hans-blog</code></h4><p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%20Hexo%20Blog%2FCleanShot%202024-09-04%20at%2016.16.03.png?alt=media&token=cc3d816f-c9a5-4802-bd48-c6161f6878a2"></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%20Hexo%20Blog%2FCleanShot%202024-09-04%20at%2016.17.51.png?alt=media&token=12b528df-1ec8-4f40-bd57-274a66b3d26d"></p>
+<h3 id="一鍵部署：將檔案發布到-GitHub"><a href="#一鍵部署：將檔案發布到-GitHub" class="headerlink" title="一鍵部署：將檔案發布到 GitHub"></a>一鍵部署：將檔案發布到 GitHub</h3><p>參考文件</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://hexo.io/zh-tw/docs/github-pages#%E4%B8%80%E9%8D%B5%E9%83%A8%E5%B1%AC">Hexo + GitHub Pages 官方部署說明</a><br>  -　<a target="_blank" rel="noopener" href="https://hexo.io/zh-tw/docs/github-pages#One-command-deployment">在 GitHub Pages 上部署 Hexo | Hexo</a></li>
+</ul>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%20Hexo%20Blog%2FCleanShot%202024-09-04%20at%2016.59.38.png?alt=media&token=1b7fb61a-5e83-43b3-8ed4-eebbf7dcfc69"></p>
+<h4 id="Step1-安裝-Git-相關套件"><a href="#Step1-安裝-Git-相關套件" class="headerlink" title="Step1. 安裝 Git 相關套件"></a>Step1. 安裝 Git 相關套件</h4><p><a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-deployer-git">hexo-deployer-git</a></p>
+<p>在終端機輸入下列指令安裝部署所需套件：</p>
+<p><code>$ npm install hexo-deployer-git --save</code></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%20Hexo%20Blog%2FCleanShot%202024-09-04%20at%2016.47.41.png?alt=media&token=636781a6-f023-46c2-a1f7-93c5a0821e6c"></p>
+<h4 id="Step2-修改-config-yml-檔案的-Deployment-設定"><a href="#Step2-修改-config-yml-檔案的-Deployment-設定" class="headerlink" title="Step2. 修改 _config.yml 檔案的 Deployment 設定"></a>Step2. 修改 <code>_</code>config.yml 檔案的 Deployment 設定</h4><p><code>_</code>config.yml 檔案是根目錄的，而不是 themes 主題中的。</p>
+<ol>
+<li>調整 <code>_</code>config.yml 的 url： <a href="https://hans0825.github.io/hans-blog">https://hans0825.github.io/hans-blog</a></li>
+</ol>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%20Hexo%20Blog%2FCleanShot%202024-09-04%20at%2016.39.58.png?alt=media&token=dfe08a7f-a487-4ec8-8ffa-dc4e4b03b2d3"></p>
+<ol start="2">
+<li><p>清空 <code>_</code>config.yml 的現有資料，並新增以下組態：</p>
+ <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span>  </span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span>  </span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/&lt;username&gt;/&lt;project&gt;</span>  </span><br><span class="line">  <span class="string">//</span> <span class="string">example,</span> <span class="string">https://github.com/hexojs/hexojs.github.io</span>  </span><br><span class="line">  <span class="attr">branch:</span> <span class="string">gh-pages</span>	</span><br></pre></td></tr></table></figure></li>
+</ol>
+<ul>
+<li>type：選擇部屬模式</li>
+<li>repo：GitHub repository 的連結</li>
+<li>branch：選擇分支</li>
+</ul>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%20Hexo%20Blog%2FCleanShot%202024-09-04%20at%2018.55.47.png?alt=media&token=09efeee0-ae3b-4703-95c6-52e208164673"></p>
+<h4 id="Step3-輸入部署指令"><a href="#Step3-輸入部署指令" class="headerlink" title="Step3. 輸入部署指令"></a>Step3. 輸入部署指令</h4><p>完成每次修改後，依序輸入 clean → generate → deploy 三指令，避免更新不完全：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean //清除靜態檔案（Clear static files）</span><br><span class="line">hexo generate //生成靜態檔案（Generate static files）</span><br><span class="line">hexo deploy //部署到 Github</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%20Hexo%20Blog%2FCleanShot%202024-09-04%20at%2019.07.12.png?alt=media&token=e5fe7ffa-3ac6-4c2f-986f-024c4d8f82e3"></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%20Hexo%20Blog%2FCleanShot%202024-09-04%20at%2019.51.08.png?alt=media&token=ea2d3cba-57f6-4af5-8c22-8286fefe1567"></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%20Hexo%20Blog%2FCleanShot%202024-09-04%20at%2019.53.04.png?alt=media&token=db2ac887-271d-40d3-82a7-51d9eb17cbd9"></p>
+<p>重新整理 Github 儲存庫，成功部署到 Github。</p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%20Hexo%20Blog%2FCleanShot%202024-09-04%20at%2019.10.36.png?alt=media&token=6610d22c-e989-4af5-9f6a-bbad70ff2982"></p>
+<p>查看網站是否有成功部署到 GitHub，Settings → Pages。</p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%20Hexo%20Blog%2FCleanShot%202024-09-04%20at%2019.56.44.png?alt=media&token=9e449e84-79d5-42d5-866c-1e86cf91a53b"></p>
+<p>到 <a href="https://hans0825.github.io/hans-blog/">https://hans0825.github.io/hans-blog/</a> 確認是否有發布成功</p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%20Hexo%20Blog%2FCleanShot%202024-09-04%20at%2019.57.56.png?alt=media&token=2dc48f6b-9bbc-48f5-9273-939f792dfeb1"></p>
+
       
     </div>
 
