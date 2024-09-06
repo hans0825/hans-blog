@@ -122,13 +122,14 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/hans-blog/archives/">
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
+          <a href="/hans-blog/tags/">
         <span class="site-state-item-count">2</span>
-        <span class="site-state-item-name">標籤</span>
+        <span class="site-state-item-name">標籤</span></a>
       </div>
   </nav>
 </div>
@@ -144,6 +145,88 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://hans0825.github.io/hans-blog/2024/09/06/Hexo-Blog-NexT-theme-%E9%96%8B%E5%95%9F-tags-%E6%A8%99%E7%B1%A4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/hans-blog/images/avatar.gif">
+      <meta itemprop="name" content="Hans">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hans's Blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Hans's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/hans-blog/2024/09/06/Hexo-Blog-NexT-theme-%E9%96%8B%E5%95%9F-tags-%E6%A8%99%E7%B1%A4/" class="post-title-link" itemprop="url">Hexo Blog NexT theme 開啟 tags 標籤</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+      
+
+      <time title="創建時間：2024-09-06 09:05:42 / 修改時間：10:24:45" itemprop="dateCreated datePublished" datetime="2024-09-06T09:05:42+08:00">2024-09-06</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>在 <code>themes/next/_config.yml</code> 的 Menu Settings，取消 tags 的註解</p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/24.9.6%20Hexo%20Blog%20NexT%20theme%20%E9%96%8B%E5%95%9F%20tags%20%E6%A8%99%E7%B1%A4%2FCleanShot%202024-09-06%20at%2009.22.47.png?alt=media&token=aded3bbb-58c3-4a2b-88cd-ca9464374dac"></p>
+<p>跑本機時，沒有正確顯示畫面，這是因為沒有產生對應的 page。</p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/24.9.6%20Hexo%20Blog%20NexT%20theme%20%E9%96%8B%E5%95%9F%20tags%20%E6%A8%99%E7%B1%A4%2FCleanShot%202024-09-06%20at%2009.25.41.png?alt=media&token=6477a73d-c218-4ce0-95be-9203141fd396"></p>
+<p>實作標籤頁：在 source 資料夾底下新增 tags 資料夾，執行以下指令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page <span class="string">&quot;tags&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>新建標籤頁後，會在 source 目錄底下新增 tages 資料夾，裡面有 index.md 檔。</p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/24.9.6%20Hexo%20Blog%20NexT%20theme%20%E9%96%8B%E5%95%9F%20tags%20%E6%A8%99%E7%B1%A4%2FCleanShot%202024-09-06%20at%2010.06.33.png?alt=media&token=6a97c4df-9434-41cc-91fe-0fcc92bbe72d"></p>
+<p>編輯 tages 頁面對應的 index.md 文件：</p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/24.9.6%20Hexo%20Blog%20NexT%20theme%20%E9%96%8B%E5%95%9F%20tags%20%E6%A8%99%E7%B1%A4%2FCleanShot%202024-09-06%20at%2010.19.45.png?alt=media&token=9f826d56-5c6b-4710-9b36-75d991bcad2c"></p>
+<p>重新整理後就能看到效果</p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/24.9.6%20Hexo%20Blog%20NexT%20theme%20%E9%96%8B%E5%95%9F%20tags%20%E6%A8%99%E7%B1%A4%2FCleanShot%202024-09-06%20at%2010.23.09.png?alt=media&token=e6fbe97b-e077-45a8-8e9c-6dff512c03d0"></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
