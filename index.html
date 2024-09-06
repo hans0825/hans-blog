@@ -138,7 +138,7 @@
         <a href="https://github.com/hans0825" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;hans0825" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
       </span>
       <span class="links-of-author-item">
-        <a href="https://www.linkedin.com/in/reio-huang/" title="Linkedin → https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;reio-huang&#x2F;" rel="noopener me" target="_blank"><i class="linkedin-square fa-fw"></i>Linkedin</a>
+        <a href="https://www.linkedin.com/in/reio-huang/" title="Linkedin → https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;reio-huang&#x2F;" rel="noopener me" target="_blank"><i class="fab fa-linkedin fa-fw"></i>Linkedin</a>
       </span>
   </div>
 
@@ -192,7 +192,7 @@
       <span class="post-meta-item-text">發表於</span>
       
 
-      <time title="創建時間：2024-09-06 15:27:03 / 修改時間：17:14:07" itemprop="dateCreated datePublished" datetime="2024-09-06T15:27:03+08:00">2024-09-06</time>
+      <time title="創建時間：2024-09-06 15:27:03 / 修改時間：23:46:40" itemprop="dateCreated datePublished" datetime="2024-09-06T15:27:03+08:00">2024-09-06</time>
     </span>
 
   
@@ -218,6 +218,25 @@
 <figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">HelloWorld</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="keyword">class</span> <span class="title">Program</span></span><br><span class="line">  &#123;</span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"><span class="built_in">string</span>[] args</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">      Console.WriteLine(<span class="string">&quot;Hello World!&quot;</span>);    </span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h4 id="2-設定-copy-button"><a href="#2-設定-copy-button" class="headerlink" title="2.設定 copy_button"></a>2.設定 <code>copy_button</code></h4><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">copy_button:</span>  <span class="comment"># 顯示複製按鈕</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">    <span class="comment"># Available values: default | flat | mac</span></span><br><span class="line">    <span class="attr">style:</span>  <span class="comment"># 外觀樣式</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="標籤外掛-Tag-Plugins"><a href="#標籤外掛-Tag-Plugins" class="headerlink" title="標籤外掛 Tag Plugins"></a>標籤外掛 Tag Plugins</h2><p>參考文件：</p>
+<ol>
+<li><a target="_blank" rel="noopener" href="https://theme-next.js.org/docs/tag-plugins/">Tag Plugins | NexT</a></li>
+<li><a target="_blank" rel="noopener" href="https://hexo.io/zh-tw/docs/tag-plugins#%E7%A8%8B%E5%BC%8F%E7%A2%BC%E5%8D%80%E5%A1%8A-Code-Block">標籤外掛（Tag Plugins） | Hexo</a></li>
+</ol>
+<h3 id="Code-Block"><a href="#Code-Block" class="headerlink" title="Code Block"></a>Code Block</h3><p>範例：指定程式語言為 <code>lang:diff</code>，每行行首使用 <code>+</code> 和 <code>-</code> 來控製程式碼增減。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;% codeblock 程式碼區塊測試 diff lang:diff line_number:true %&#125;</span><br><span class="line">- code snippet deleted </span><br><span class="line">+ code snippet added </span><br><span class="line">&#123;% endcodeblock %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<figure class="highlight diff"><figcaption><span>程式碼區塊測試 diff</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="deletion">- code snippet deleted </span></span><br><span class="line"><span class="addition">+ code snippet added </span></span><br></pre></td></tr></table></figure>
+
+<p>範例：指定程式語言為 <code>lang:C#</code>，從第 3 行開始 <code>first_line:3</code>。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&#123;% codeblock 程式碼區塊測試 C# lang:cs line_number:true first_line:3 %&#125;</span><br><span class="line">using System;</span><br><span class="line"></span><br><span class="line">namespace HelloWorld</span><br><span class="line">&#123;</span><br><span class="line">  class Program</span><br><span class="line">  &#123;</span><br><span class="line">    static void Main(string[] args)</span><br><span class="line">    &#123;</span><br><span class="line">      Console.WriteLine(&quot;Hello World!&quot;);    </span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&#123;% endcodeblock %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<figure class="highlight cs"><figcaption><span>程式碼區塊測試 C#</span></figcaption><table><tr><td class="gutter"><pre><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">HelloWorld</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="keyword">class</span> <span class="title">Program</span></span><br><span class="line">  &#123;</span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"><span class="built_in">string</span>[] args</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">      Console.WriteLine(<span class="string">&quot;Hello World!&quot;</span>);    </span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
       
     </div>
 
@@ -361,7 +380,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新於</span>
-      <time title="修改時間：2024-09-06 15:27:28" itemprop="dateModified" datetime="2024-09-06T15:27:28+08:00">2024-09-06</time>
+      <time title="修改時間：2024-09-06 22:29:12" itemprop="dateModified" datetime="2024-09-06T22:29:12+08:00">2024-09-06</time>
     </span>
 
   
@@ -385,9 +404,11 @@
 <p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%20Hexo%20Blog%2FCleanShot%202024-09-04%20at%2010.39.47.png?alt=media&token=21a8ec86-bb15-47c7-832d-f875d3a5ee29"></p>
 <p>themes 下多了 next 主題</p>
 <p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%20Hexo%20Blog%2FCleanShot%202024-09-04%20at%2010.41.22.png?alt=media&token=229e0fef-d204-45e8-b980-a00afed30ef7"></p>
-<h2 id="修改-config-yml"><a href="#修改-config-yml" class="headerlink" title="修改 config.yml"></a>修改 config.yml</h2><p>把 landscape 改成 next 主題</p>
+<h2 id="修改-config-yml"><a href="#修改-config-yml" class="headerlink" title="修改 _config.yml"></a>修改 _config.yml</h2><p>修改根目錄 _config.yml 中的 theme 參數（預設是 landscape），把 landscape 改成 next 主題。</p>
 <p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%20Hexo%20Blog%2FCleanShot%202024-09-04%20at%2010.45.45.png?alt=media&token=dba1df37-ccc4-4ac4-a6af-040c91e33ddf"></p>
 <p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%20Hexo%20Blog%2FCleanShot%202024-09-04%20at%2010.46.59.png?alt=media&token=525860f0-c379-4602-a6a0-c67d10102296"></p>
+<figure class="highlight diff"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="deletion">- theme: landscape</span></span><br><span class="line"><span class="addition">+ theme: next</span></span><br></pre></td></tr></table></figure>
+
 <p>啟動本地端伺服器  run 一下 server 看看 Blog</p>
 <p>執行 <code>hexo server</code></p>
 <p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%20Hexo%20Blog%2FCleanShot%202024-09-04%20at%2010.50.52.png?alt=media&token=8ba14c27-a1fb-4127-8a84-b95cfb952db3"></p>
