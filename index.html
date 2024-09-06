@@ -18,7 +18,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha256-XOqroi11tY4EFQMR9ZYwZWKj5ZXiftSx36RRuC3anlA=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"hans0825.github.io","root":"/hans-blog/","images":"/hans-blog/images","scheme":"Gemini","darkmode":true,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"}}</script><script src="/hans-blog/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"hans0825.github.io","root":"/hans-blog/","images":"/hans-blog/images","scheme":"Gemini","darkmode":true,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"}}</script><script src="/hans-blog/js/config.js"></script>
 
     <meta property="og:type" content="website">
 <meta property="og:title" content="Hans&#39;s Blog">
@@ -180,7 +180,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/hans-blog/2024/09/06/Hexo-NexT-theme-%E8%A8%AD%E7%BD%AE/" class="post-title-link" itemprop="url">Hexo NexT theme 設置</a>
+          <a href="/hans-blog/2024/09/06/Hexo-NexT-theme-%E8%A8%AD%E7%BD%AE/" class="post-title-link" itemprop="url">Hexo NexT theme 設定</a>
         </h2>
 
         <div class="post-meta-container">
@@ -192,7 +192,7 @@
       <span class="post-meta-item-text">發表於</span>
       
 
-      <time title="創建時間：2024-09-06 15:27:03 / 修改時間：15:35:13" itemprop="dateCreated datePublished" datetime="2024-09-06T15:27:03+08:00">2024-09-06</time>
+      <time title="創建時間：2024-09-06 15:27:03 / 修改時間：17:14:07" itemprop="dateCreated datePublished" datetime="2024-09-06T15:27:03+08:00">2024-09-06</time>
     </span>
 
   
@@ -205,7 +205,19 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          
+          <h2 id="程式碼區塊樣式"><a href="#程式碼區塊樣式" class="headerlink" title="程式碼區塊樣式"></a>程式碼區塊樣式</h2><h3 id="Step1：挑選樣式"><a href="#Step1：挑選樣式" class="headerlink" title="Step1：挑選樣式"></a>Step1：挑選樣式</h3><p>到 <a target="_blank" rel="noopener" href="https://theme-next.js.org/highlight/">NexT Highlight Theme Preview</a> 試選喜歡的樣式</p>
+<p>選擇 Highlight.js</p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/24.9.6%20Next%20config%20setting%2FCleanShot%202024-09-06%20at%2016.32.07.png?alt=media&token=9515bfd9-1bd2-4552-b166-2d4d6f744a8c"></p>
+<h3 id="Step2：設定-hexo-config-yml-參數"><a href="#Step2：設定-hexo-config-yml-參數" class="headerlink" title="Step2：設定 hexo/_config.yml 參數"></a>Step2：設定 <code>hexo/_config.yml</code> 參數</h3><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">highlight:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="string">...</span></span><br><span class="line"><span class="attr">prismjs:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">  <span class="string">...</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/24.9.6%20Next%20config%20setting%2FCleanShot%202024-09-06%20at%2016.50.45.png?alt=media&token=e894e594-9acd-49e9-ab9e-da9b5c98b108"></p>
+<p>設定完成後執行：<code>hexo clean</code></p>
+<h3 id="Step3：設定-next-config-yml"><a href="#Step3：設定-next-config-yml" class="headerlink" title="Step3：設定 next/_config.yml"></a>Step3：設定 <code>next/_config.yml</code></h3><h4 id="1-設定高亮主題"><a href="#1-設定高亮主題" class="headerlink" title="1.設定高亮主題"></a>1.設定高亮主題</h4><p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/24.9.6%20Next%20config%20setting%2FCleanShot%202024-09-06%20at%2016.05.15.png?alt=media&token=295b2e2d-88b4-44a7-9b11-1d2e52ae30c0"></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/24.9.6%20Next%20config%20setting%2FCleanShot%202024-09-06%20at%2016.24.06.png?alt=media&token=6bc847e9-2de2-4dea-844b-e99c5d437f94"></p>
+<p>測試結果：</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">HelloWorld</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="keyword">class</span> <span class="title">Program</span></span><br><span class="line">  &#123;</span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"><span class="built_in">string</span>[] args</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">      Console.WriteLine(<span class="string">&quot;Hello World!&quot;</span>);    </span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-設定-copy-button"><a href="#2-設定-copy-button" class="headerlink" title="2.設定 copy_button"></a>2.設定 <code>copy_button</code></h4><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">copy_button:</span>  <span class="comment"># 顯示複製按鈕</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">    <span class="comment"># Available values: default | flat | mac</span></span><br><span class="line">    <span class="attr">style:</span>  <span class="comment"># 外觀樣式</span></span><br></pre></td></tr></table></figure>
       
     </div>
 
