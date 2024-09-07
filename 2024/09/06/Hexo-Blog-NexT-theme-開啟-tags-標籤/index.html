@@ -20,12 +20,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"hans0825.github.io","root":"/hans-blog/","images":"/hans-blog/images","scheme":"Gemini","darkmode":true,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"}}</script><script src="/hans-blog/js/config.js"></script>
 
-    <meta name="description" content="在 themes&#x2F;next&#x2F;_config.yml 的 Menu Settings，取消 tags 的註解  跑本機時，沒有正確顯示畫面，這是因為沒有產生對應的 page。  實作標籤頁：在 source 資料夾底下新增 tags 資料夾，執行以下指令： 1hexo new page &quot;tags&quot;  新建標籤頁後，會在 source 目錄底下新增 tages 資料夾，裡面有 i">
+    <meta name="description" content="在 themes&#x2F;next&#x2F;_config.yml 的 Menu Settings，取消 tags 的註解">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo Blog NexT theme 開啟 tags 標籤">
 <meta property="og:url" content="https://hans0825.github.io/hans-blog/2024/09/06/Hexo-Blog-NexT-theme-%E9%96%8B%E5%95%9F-tags-%E6%A8%99%E7%B1%A4/index.html">
 <meta property="og:site_name" content="Hans&#39;s Blog">
-<meta property="og:description" content="在 themes&#x2F;next&#x2F;_config.yml 的 Menu Settings，取消 tags 的註解  跑本機時，沒有正確顯示畫面，這是因為沒有產生對應的 page。  實作標籤頁：在 source 資料夾底下新增 tags 資料夾，執行以下指令： 1hexo new page &quot;tags&quot;  新建標籤頁後，會在 source 目錄底下新增 tages 資料夾，裡面有 i">
+<meta property="og:description" content="在 themes&#x2F;next&#x2F;_config.yml 的 Menu Settings，取消 tags 的註解">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/24.9.6%20Hexo%20Blog%20NexT%20theme%20%E9%96%8B%E5%95%9F%20tags%20%E6%A8%99%E7%B1%A4%2FCleanShot%202024-09-06%20at%2009.22.47.png?alt=media&token=aded3bbb-58c3-4a2b-88cd-ca9464374dac">
 <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/24.9.6%20Hexo%20Blog%20NexT%20theme%20%E9%96%8B%E5%95%9F%20tags%20%E6%A8%99%E7%B1%A4%2FCleanShot%202024-09-06%20at%2009.25.41.png?alt=media&token=6477a73d-c218-4ce0-95be-9203141fd396">
@@ -33,10 +33,10 @@
 <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/24.9.6%20Hexo%20Blog%20NexT%20theme%20%E9%96%8B%E5%95%9F%20tags%20%E6%A8%99%E7%B1%A4%2FCleanShot%202024-09-06%20at%2010.19.45.png?alt=media&token=9f826d56-5c6b-4710-9b36-75d991bcad2c">
 <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/24.9.6%20Hexo%20Blog%20NexT%20theme%20%E9%96%8B%E5%95%9F%20tags%20%E6%A8%99%E7%B1%A4%2FCleanShot%202024-09-06%20at%2010.23.09.png?alt=media&token=e6fbe97b-e077-45a8-8e9c-6dff512c03d0">
 <meta property="article:published_time" content="2024-09-06T01:05:42.000Z">
-<meta property="article:modified_time" content="2024-09-06T04:50:04.057Z">
+<meta property="article:modified_time" content="2024-09-07T10:43:00.522Z">
 <meta property="article:author" content="Hans">
-<meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="Blog">
+<meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="NexT">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/24.9.6%20Hexo%20Blog%20NexT%20theme%20%E9%96%8B%E5%95%9F%20tags%20%E6%A8%99%E7%B1%A4%2FCleanShot%202024-09-06%20at%2009.22.47.png?alt=media&token=aded3bbb-58c3-4a2b-88cd-ca9464374dac">
@@ -203,9 +203,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">發表於</span>
-      
 
-      <time title="創建時間：2024-09-06 09:05:42 / 修改時間：12:50:04" itemprop="dateCreated datePublished" datetime="2024-09-06T09:05:42+08:00">2024-09-06</time>
+      <time title="創建時間：2024-09-06 09:05:42" itemprop="dateCreated datePublished" datetime="2024-09-06T09:05:42+08:00">2024-09-06</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新於</span>
+      <time title="修改時間：2024-09-07 18:43:00" itemprop="dateModified" datetime="2024-09-07T18:43:00+08:00">2024-09-07</time>
     </span>
 
   
@@ -219,6 +225,8 @@
     
     <div class="post-body" itemprop="articleBody"><p>在 <code>themes/next/_config.yml</code> 的 Menu Settings，取消 tags 的註解</p>
 <p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/24.9.6%20Hexo%20Blog%20NexT%20theme%20%E9%96%8B%E5%95%9F%20tags%20%E6%A8%99%E7%B1%A4%2FCleanShot%202024-09-06%20at%2009.22.47.png?alt=media&token=aded3bbb-58c3-4a2b-88cd-ca9464374dac"></p>
+<span id="more"></span>
+
 <p>跑本機時，沒有正確顯示畫面，這是因為沒有產生對應的 page。</p>
 <p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/24.9.6%20Hexo%20Blog%20NexT%20theme%20%E9%96%8B%E5%95%9F%20tags%20%E6%A8%99%E7%B1%A4%2FCleanShot%202024-09-06%20at%2009.25.41.png?alt=media&token=6477a73d-c218-4ce0-95be-9203141fd396"></p>
 <p>實作標籤頁：在 source 資料夾底下新增 tags 資料夾，執行以下指令：</p>
@@ -239,8 +247,8 @@
 
     <footer class="post-footer">
           <div class="post-tags">
-              <a href="/hans-blog/tags/Hexo/" rel="tag"># Hexo</a>
               <a href="/hans-blog/tags/Blog/" rel="tag"># Blog</a>
+              <a href="/hans-blog/tags/Hexo/" rel="tag"># Hexo</a>
               <a href="/hans-blog/tags/NexT/" rel="tag"># NexT</a>
           </div>
 
@@ -277,11 +285,9 @@
     &copy; 
     <span itemprop="copyrightYear">2024</span>
     <span class="with-love">
-      <i class="fa fa-heart"></i>
+      <i class="fa-solid fa-rocket"></i>
     </span>
     <span class="author" itemprop="copyrightHolder">Hans</span>
-  </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 強力驅動
   </div>
 
     </div>
