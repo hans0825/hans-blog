@@ -20,24 +20,31 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"hans0825.github.io","root":"/hans-blog/","images":"/hans-blog/images","scheme":"Gemini","darkmode":true,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"}}</script><script src="/hans-blog/js/config.js"></script>
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Hans&#39;s Blog">
-<meta property="og:url" content="https://hans0825.github.io/hans-blog/tags/Hexo/index.html">
+    <meta name="description" content="安裝 Vimbrew install vim  參考文章 安裝並以超簡單的 vimrc 配置於 Windows&#x2F;Mac 平台入門 Vim - zhung soft">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vim 安裝設定">
+<meta property="og:url" content="https://hans0825.github.io/hans-blog/2024/09/09/Vim-%E5%AE%89%E8%A3%9D%E8%A8%AD%E5%AE%9A/index.html">
 <meta property="og:site_name" content="Hans&#39;s Blog">
+<meta property="og:description" content="安裝 Vimbrew install vim  參考文章 安裝並以超簡單的 vimrc 配置於 Windows&#x2F;Mac 平台入門 Vim - zhung soft">
 <meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/24.9.9%20Vim%20%E5%AE%89%E8%A3%9D%E8%A8%AD%E5%AE%9A%2FCleanShot%202024-09-09%20at%2020.24.04.png?alt=media&token=94cf73d5-9b12-4795-a04a-25ef18d5bd9f">
+<meta property="article:published_time" content="2024-09-09T10:55:26.000Z">
+<meta property="article:modified_time" content="2024-09-09T13:45:56.490Z">
 <meta property="article:author" content="Hans">
-<meta property="article:tag" content="C#,k8S">
+<meta property="article:tag" content="vim">
+<meta property="article:tag" content="terminal">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/24.9.9%20Vim%20%E5%AE%89%E8%A3%9D%E8%A8%AD%E5%AE%9A%2FCleanShot%202024-09-09%20at%2020.24.04.png?alt=media&token=94cf73d5-9b12-4795-a04a-25ef18d5bd9f">
 
 
-<link rel="canonical" href="https://hans0825.github.io/hans-blog/tags/Hexo/">
+<link rel="canonical" href="https://hans0825.github.io/hans-blog/2024/09/09/Vim-%E5%AE%89%E8%A3%9D%E8%A8%AD%E5%AE%9A/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-TW","comments":"","permalink":"","path":"tags/Hexo/index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://hans0825.github.io/hans-blog/2024/09/09/Vim-%E5%AE%89%E8%A3%9D%E8%A8%AD%E5%AE%9A/","path":"2024/09/09/Vim-安裝設定/","title":"Vim 安裝設定"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>標籤: Hexo | Hans's Blog</title>
+<title>Vim 安裝設定 | Hans's Blog</title>
   
 
 
@@ -97,7 +104,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目錄
@@ -110,6 +117,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%9D-Vim"><span class="nav-number">1.</span> <span class="nav-text">安裝 Vim</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%83%E8%80%83%E6%96%87%E7%AB%A0"><span class="nav-number">2.</span> <span class="nav-text">參考文章</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -157,150 +165,120 @@
 
     </div>
 
-    <div class="main-inner tag posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
+
+
+<div class="post-block">
   
   
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <h1 class="collection-header">Hexo
-          <small>標籤</small>
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://hans0825.github.io/hans-blog/2024/09/09/Vim-%E5%AE%89%E8%A3%9D%E8%A8%AD%E5%AE%9A/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/hans-blog/images/avatar.gif">
+      <meta itemprop="name" content="Hans">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hans's Blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Vim 安裝設定 | Hans's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Vim 安裝設定
         </h1>
-      </div>
 
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
       
-    <div class="collection-year">
-      <span class="collection-header">2024</span>
+
+      <time title="創建時間：2024-09-09 18:55:26 / 修改時間：21:45:56" itemprop="dateCreated datePublished" datetime="2024-09-09T18:55:26+08:00">2024-09-09</time>
+    </span>
+
+  
+    <span class="post-meta-item" title="閱讀次數" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">閱讀次數：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h2 id="安裝-Vim"><a href="#安裝-Vim" class="headerlink" title="安裝 Vim"></a>安裝 Vim</h2><p><code>brew install vim</code></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/hans-blog-62db8.appspot.com/o/24.9.9%20Vim%20%E5%AE%89%E8%A3%9D%E8%A8%AD%E5%AE%9A%2FCleanShot%202024-09-09%20at%2020.24.04.png?alt=media&token=94cf73d5-9b12-4795-a04a-25ef18d5bd9f"></p>
+<h2 id="參考文章"><a href="#參考文章" class="headerlink" title="參考文章"></a>參考文章</h2><ol>
+<li><a target="_blank" rel="noopener" href="https://zhung.com.tw/article/install-and-start-vim-with-minimal-vimrc/">安裝並以超簡單的 vimrc 配置於 Windows&#x2F;Mac 平台入門 Vim - zhung soft</a></li>
+</ol>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2024-09-08T21:32:21+08:00"
-              content="2024-09-08">
-          09-08
-        </time>
-      </div>
+    
+    
+    
 
-      <div class="post-title">
-          <a class="post-title-link" href="/hans-blog/2024/09/08/Hexo-Plugins/" itemprop="url">
-            <span itemprop="name">Hexo Plugins</span>
-          </a>
-      </div>
+    <footer class="post-footer">
+          
 
-      
-    </header>
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>作者： </strong>Hans
+  </li>
+  <li class="post-copyright-link">
+      <strong>文章連結：</strong>
+      <a href="https://hans0825.github.io/hans-blog/2024/09/09/Vim-%E5%AE%89%E8%A3%9D%E8%A8%AD%E5%AE%9A/" title="Vim 安裝設定">https://hans0825.github.io/hans-blog/2024/09/09/Vim-安裝設定/</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>版權聲明： </strong>本網誌所有文章除特別聲明外，均採用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh_TW" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 許可協議。轉載請註明出處！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/hans-blog/tags/vim/" rel="tag"># vim</a>
+              <a href="/hans-blog/tags/terminal/" rel="tag"># terminal</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/hans-blog/2024/09/08/Hexo-Plugins/" rel="prev" title="Hexo Plugins">
+                  <i class="fa fa-angle-left"></i> Hexo Plugins
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
   </article>
+</div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2024-09-08T00:02:09+08:00"
-              content="2024-09-08">
-          09-08
-        </time>
-      </div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/hans-blog/2024/09/08/Hexo-theme-NexT-%E4%B8%8A%E5%82%B3-GitHub-%E5%82%99%E4%BB%BD%E5%A4%B1%E6%95%97/" itemprop="url">
-            <span itemprop="name">Hexo theme NexT 上傳 GitHub 備份失敗</span>
-          </a>
-      </div>
 
-      
-    </header>
-  </article>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2024-09-06T15:27:03+08:00"
-              content="2024-09-06">
-          09-06
-        </time>
-      </div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/hans-blog/2024/09/06/Hexo-NexT-theme-%E8%A8%AD%E7%BD%AE/" itemprop="url">
-            <span itemprop="name">Hexo NexT theme 設定</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2024-09-06T09:05:42+08:00"
-              content="2024-09-06">
-          09-06
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/hans-blog/2024/09/06/Hexo-Blog-NexT-theme-%E9%96%8B%E5%95%9F-tags-%E6%A8%99%E7%B1%A4/" itemprop="url">
-            <span itemprop="name">Hexo Blog NexT theme 開啟 tags 標籤</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2024-09-04T11:29:43+08:00"
-              content="2024-09-04">
-          09-04
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/hans-blog/2024/09/04/%E4%BD%BF%E7%94%A8-Hexo-GitHub-Pages-%E9%83%A8%E7%BD%B2%E7%B6%B2%E8%AA%8C/" itemprop="url">
-            <span itemprop="name">使用 Hexo + GitHub Pages 部署網誌</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2024-09-01T10:30:43+08:00"
-              content="2024-09-01">
-          09-01
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/hans-blog/2024/09/01/hello-world/" itemprop="url">
-            <span itemprop="name">Hello World</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-    </div>
-  </div>
-  
-  
-  
 
 </div>
   </main>
