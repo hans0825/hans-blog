@@ -1316,7 +1316,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #ff28f1;
+    background: #4aff29;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -1940,10 +1940,6 @@ pre code {
   font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   overflow-wrap: break-word;
 }
-.post-body code {
-  background-color: #f7e3e3;
-  color: #900;
-}
 @media (min-width: 1200px) {
   .post-body {
     font-size: 1.125em;
@@ -2058,6 +2054,10 @@ pre code {
   position: absolute;
   top: 0;
   width: 100%;
+}
+.post-body code {
+  background-color: #f7e3e3;
+  color: #900;
 }
 .post-gallery {
   display: flex;
