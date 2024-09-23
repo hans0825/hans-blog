@@ -1316,7 +1316,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #81f44d;
+    background: #0801ff;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -1939,6 +1939,10 @@ pre code {
 .post-body {
   font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   overflow-wrap: break-word;
+}
+.post-body code {
+  background-color: #f7e3e3;
+  color: #900;
 }
 @media (min-width: 1200px) {
   .post-body {
